@@ -1,4 +1,3 @@
-
 const Discord = require("discord.js"); //baixar a lib
 const client = new Discord.Client({ intents: 32767 }); 
 const config = require("./config.json"); 
@@ -11,6 +10,10 @@ client.on("ready", () => {
     //  1 = Transmitindo
     //  2 = Ouvindo
     //  3 = Assistindo
+    client.user.setActivity("with depression", {
+      type: "STREAMING",
+      url: "https://www.twitch.tv/alangb12"
+    });
 });
 
 
